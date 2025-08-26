@@ -183,7 +183,6 @@
       text-decoration: underline;
     }
 
-    /* Mantém a estrutura fixa no mobile */
     @media (max-width: 768px) {
       header {
         flex-direction: row;
@@ -211,6 +210,32 @@
         padding: 30px 20px;
       }
     }
+
+    /* Subtítulos da seção de habilidades */
+    .skill-subtitle {
+      margin: 25px 0 10px;
+      font-size: 1.1rem;
+      color: #00ff88;
+      font-weight: 600;
+    }
+
+    /* Grupos de skills */
+    .skill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px; /* iguala espaçamento */
+    }
+
+    /* Responsividade para subtítulos e grupos */
+    @media (max-width: 600px) {
+      .skill-subtitle {
+        font-size: 1rem;
+      }
+      .skill-group {
+        gap: 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -235,7 +260,7 @@
       <img src="fotoTF.png" alt="Foto de Thasso Felipe" class="profile-photo">
       <div class="header-content">
         <h1>Thasso Felipe de Holanda (Phel_lip)</h1>
-        <p>Game Developer pronto para entregar soluções funcionais com interatividade e boas práticas.</p>
+        <p>Game Developer | Full-Stack Web, pronto para entregar soluções funcionais e transformar ideias em experiências digitais.</p>
         <nav>
           <a href="#habilidades"><i data-lucide="code" class="icon"></i> Habilidades</a>
           <a href="#projetos"><i data-lucide="gamepad" class="icon"></i> Projetos</a>
@@ -248,55 +273,98 @@
     <main>
       <section id="habilidades">
         <h2><i data-lucide="code" class="icon"></i> Habilidades Técnicas</h2>
-        <div>
+
+        <h3 class="skill-subtitle"><i data-lucide="cpu" class="icon"></i> Principais Competências</h3>
+        <div class="skill-group">
           <span class="tag">C#</span>
-          <span class="tag">POO</span>
+          <span class="tag">Unity (2D, 3D, Mobile, Multiplayer)</span>
+          <span class="tag">Desenvolvimento Web (HTML, CSS, JavaScript)</span>
+          <span class="tag">Full-Stack Web (Experiência com Front-end e Back-end)</span>
+        </div>
+
+        <h3 class="skill-subtitle"><i data-lucide="settings" class="icon"></i> Outras Linguagens e Ferramentas</h3>
+        <div class="skill-group">
+          <span class="tag">Lua</span>
+          <span class="tag">C++ (básico)</span>
           <span class="tag">Visual Studio</span>
           <span class="tag">VS Code</span>
-          <span class="tag">Unity (2D, 3D, Mobile, Multiplayer)</span>
-          <span class="tag">Lua</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JS</span>
-          <span class="tag">C++</span>
-          <span class="tag">Unreal Engine (em aprendizado)</span>
           <span class="tag">Git</span>
+        </div>
+
+        <h3 class="skill-subtitle"><i data-lucide="book-open" class="icon"></i> Em Aprendizado</h3>
+        <div class="skill-group">
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">Novas tecnologias Web e Game Dev</span>
         </div>
       </section>
 
       <section id="projetos">
-        <h2><i data-lucide="gamepad" class="icon"></i> Projetos</h2>
-        <ul>
-          <li>Projetos Integradores (IFBA) - Desenvolvimento de jogos 2D, 3D, mobile e desktop</li>
-          <li>Criações indie e experimentais que exploram a narrativa e o lúdico</li>
-          <li>Protótipo de aplicação web feito com HTML/CSS e JavaScript</li>
-        </ul>
-      </section>
+  <h2><i data-lucide="gamepad" class="icon"></i> Projetos Relevantes</h2>
+  
+  <!-- Projeto 1: Studio de Jogos Digitais  -->
+  <div style="background-color:#1a1a1a; border:2px solid #00ff88; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(0,255,136,0.5);">
+    <h3 style="color:#00ff88; margin-bottom:10px;">Studio de Jogos Digitais</h3>
+    <p>Desenvolvimento de jogos 2D, 3D, mobile e desktop, aplicando conceitos de programação e design.</p>
+    <a href="https://phel-lip.itch.io/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
+  </div>
+
+  <!-- Projeto 2: Portal IFBA -->
+  <div style="background-color:#1a1a1a; border:2px solid #00ff88; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(0,255,136,0.5); color:#fff;">
+    <h3 style="color:#00ff88; margin-bottom:15px;">Página Web [Mapa de Navegação - Portal IFBA]</h3>
+
+    <p><strong>Objetivo:</strong> Criar um hub que centraliza os sites mais acessados do Portal IFBA, facilitando a navegação para estudantes e servidores, novatos ou veteranos, com foco em usabilidade e acessibilidade.</p>
+
+    <p><strong>Tecnologias usadas:</strong> HTML, CSS e JavaScript.</p>
+
+    <p><strong>Recursos implementados:</strong></p>
+    <p style="margin-left:15px; line-height:1.6;">
+      <strong>• Leitura Fácil:</strong> aumenta o tamanho de textos e botões para melhor legibilidade.<br>
+      <strong>• Alto Contraste:</strong> modo de contraste elevado para melhor visualização.<br>
+      <strong>• VLibras:</strong> integração com tradutor de Libras para acessibilidade a usuários surdos.
+    </p>
+
+    <p><strong>Resultado:</strong> Projeto aplicado na disciplina de Interação Humano-Computador, unindo conhecimentos de desenvolvimento web e boas práticas de acessibilidade.</p>
+
+    <a href="https://phel-lip.github.io/Projeto-Portal/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
+  </div>
+
+  <!-- Nota sobre novos projetos -->
+  <p style="margin-top:10px; font-style:italic; color:#00cc66;">
+    Novos projetos em desenvolvimento.
+  </p>
+</section>
 
       <section id="habilidades-diferenciais">
-        <h2><i data-lucide="sparkles" class="icon"></i> Diferencial</h2>
-        <div>
+        <h2><i data-lucide="sparkles" class="icon"></i> Diferenciais</h2>
+
+        <h3 class="skill-subtitle"><i data-lucide="palette" class="icon"></i> Design & Produção Visual</h3>
+        <div class="skill-group">
           <span class="tag">Desenho à mão</span>
           <span class="tag">Vetor</span>
-          <span class="tag">AI</span>
-          <span class="tag">AP</span>
           <span class="tag">Canvas</span>
-          <span class="tag">blender</span>
+          <span class="tag">Blender (Animação & Modelagem 3D)</span>
           <span class="tag">Edição de imagem</span>
           <span class="tag">Edição de vídeo</span>
+        </div>
+
+        <h3 class="skill-subtitle"><i data-lucide="edit" class="icon"></i> Criatividade & Conteúdo</h3>
+        <div class="skill-group">
+          <span class="tag">Adobe Illustrator</span>
+          <span class="tag">Adobe Photoshop</span>
           <span class="tag">Escrita criativa</span>
         </div>
       </section>
 
-      <section id="sobre">
-        <h2><i data-lucide="user" class="icon"></i> Sobre Mim</h2>
-        <p>
-          Apaixonado por computação e jogos desde cedo, sempre busco aprimorar minhas habilidades criativas e lógicas.
-          Sou estudante de Tecnologia em Jogos Digitais no Instituto Federal da Bahia, atualmente no 5º e último período do curso. 
-          Tenho experiência prática com programação, independente da lingua/engine aprendo rápido. No momento, estou aprofundando meus conhecimentos na Unreal Engine.
-          Me considero um desenvolvedor fullstack, mas tenho um carinho especial pelo desenvolvimento web — especialmente na criação de páginas interativas e experiências visuais envolventes.
-        </p>
-      </section>
+     <section id="sobre">
+  <h2><i data-lucide="user" class="icon"></i> Resumo Profissional</h2>
+  <p>
+    Sou estudante do 5º e último período de Tecnologia em Jogos Digitais no Instituto Federal da Bahia, com experiência prática em desenvolvimento de jogos 2D, 3D, mobile e web.<br>
+    Tenho domínio em C# e Unity, e habilidades em desenvolvimento fullstack, incluindo front-end e back-end.<br>
+    Atualmente, aprofundo meus conhecimentos em Unreal Engine e novas tecnologias digitais.<br>
+    Busco aplicar criatividade e lógica para transformar ideias em soluções funcionais e experiências interativas de qualidade.
+  </p>
+</section>
+
 
       <section id="contato">
         <h2><i data-lucide="mail" class="icon"></i> Contato</h2>
@@ -312,9 +380,7 @@
   </div>
 
   <script>
-    lucide.createIcons({
-      color: "#00ff88"
-    });
+    lucide.createIcons({ color: "#00ff88" });
   </script>
 </body>
 </html>
