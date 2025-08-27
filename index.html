@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thasso Felipe | Portfólio Dev</title>
+  <meta name="description" content="Portfólio de Thasso Felipe - Desenvolvedor Júnior em Unity, C#, Web e Game Dev. Experiência com jogos 2D/3D, multiplayer e desenvolvimento full-stack.">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     * {
@@ -227,8 +228,23 @@
       margin-bottom: 20px; /* iguala espaçamento */
     }
 
-    /* Responsividade para subtítulos e grupos */
+    /* Responsividade extra para header em telas muito pequenas */
     @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+      }
+      .header-content {
+        align-items: center;
+      }
+      .header-content h1 {
+        font-size: 1.6rem;
+      }
+      .header-content p {
+        font-size: 0.9rem;
+      }
       .skill-subtitle {
         font-size: 1rem;
       }
@@ -328,6 +344,13 @@
     <a href="https://phel-lip.github.io/Projeto-Portal/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
   </div>
 
+  <!-- Projeto 3: Busca em Largura (IA)  -->
+  <div style="background-color:#1a1a1a; border:2px solid #00ff88; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(0,255,136,0.5);">
+    <h3 style="color:#00ff88; margin-bottom:10px;">BFS - Busca em Largura (IA)</h3>
+    <p>Implementação interativa do algoritmo de Busca em Largura (BFS), feita na Unity, aplicando conceitos de Inteligência Artificial para resolver problemas de caminho em grafos.</p>
+    <a href="https://phel-lip.github.io/Projeto-BFSIA/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
+  </div>
+
   <!-- Nota sobre novos projetos -->
   <p style="margin-top:10px; font-style:italic; color:#00cc66;">
     Novos projetos em desenvolvimento.
@@ -376,6 +399,10 @@
 
     <footer>
       <p>&copy; 2025 Thasso Felipe. Todos os direitos reservados.</p>
+      <a href="curriculo.pdf" target="_blank" 
+        style="display:inline-block; margin-top:15px; color:#000; background:#00ff88; padding:10px 18px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">
+        <i data-lucide="file-down" class="icon" style="color:#000;"></i> Baixar Currículo
+      </a>
     </footer>
   </div>
 
