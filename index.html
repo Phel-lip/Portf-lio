@@ -21,20 +21,10 @@
 
     body {
       position: relative;
-      background-color: #000;
-      color: #e0e0e0;
+      background: linear-gradient(135deg, #0B1120, #111827, #1E293B);
+      background-attachment: fixed;
+      color: #E2E8F0;
       line-height: 1.6;
-    }
-
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.2;
     }
 
     .navbar-top {
@@ -42,8 +32,8 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      border-bottom: 2px solid #00ff88;
+      background: rgba(11, 17, 32, 0.95);
+      border-bottom: 2px solid #06B6D4;
       z-index: 9999;
       display: flex;
       justify-content: center;
@@ -52,21 +42,21 @@
     }
 
     .navbar-top a {
-      color: #00ff88;
+      color: #06B6D4;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     .navbar-top a:hover {
-      color: #00cc66;
+      color: #0891B2;
     }
 
     .container {
-      background-color: #121212;
+      background-color: #0F172A;
       border-radius: 16px;
-      box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
-      border: 2px solid #00ff88;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+      border: 1px solid #06B6D4;
       max-width: 1000px;
       margin: 100px auto 40px;
       padding: 40px 30px;
@@ -85,7 +75,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #00ff88;
+      border: 2px solid #06B6D4;
       flex-shrink: 0;
     }
 
@@ -97,24 +87,24 @@
 
     header h1 {
       font-size: 2.5rem;
-      color: #00ff88;
+      color: #06B6D4;
     }
 
     header p {
       margin: 10px 0;
       font-style: italic;
-      color: #00cc66;
+      color: #67E8F9;
     }
 
     header nav a {
       margin-right: 10px;
-      color: #00ff88;
+      color: #06B6D4;
       text-decoration: none;
       font-weight: bold;
     }
 
     header nav a:hover {
-      color: #00cc66;
+      color: #0891B2;
     }
 
     section {
@@ -123,9 +113,9 @@
     }
 
     h2 {
-      border-bottom: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1E293B;
       margin-bottom: 20px;
-      color: #00cc66;
+      color: #67E8F9;
     }
 
     .icon {
@@ -133,7 +123,7 @@
       height: 18px;
       vertical-align: middle;
       margin-right: 6px;
-      color: #00ff88;
+      color: #06B6D4;
     }
 
     ul {
@@ -143,7 +133,7 @@
 
     ul li::before {
       content: '•';
-      color: #00ff88;
+      color: #06B6D4;
       margin-right: 8px;
     }
 
@@ -153,19 +143,19 @@
 
     .tag {
       display: inline-block;
-      background-color: #00ff88;
-      color: #000000;
+      background-color: #06B6D4;
+      color: #0B1120;
       padding: 6px 12px;
       border-radius: 20px;
       font-weight: bold;
       font-size: 0.9rem;
-      box-shadow: 0 2px 4px rgba(0, 255, 136, 0.2);
+      box-shadow: 0 2px 4px rgba(6, 182, 212, 0.2);
       margin: 6px 6px 0 0;
       transition: background 0.3s;
     }
 
     .tag:hover {
-      background-color: #00cc66;
+      background-color: #0891B2;
       color: #ffffff;
     }
 
@@ -173,11 +163,11 @@
       text-align: center;
       margin-top: 50px;
       font-size: 0.9rem;
-      color: #666666;
+      color: #94A3B8;
     }
 
     a {
-      color: #00ff88;
+      color: #06B6D4;
     }
 
     a:hover {
@@ -216,7 +206,7 @@
     .skill-subtitle {
       margin: 25px 0 10px;
       font-size: 1.1rem;
-      color: #00ff88;
+      color: #06B6D4;
       font-weight: 600;
     }
 
@@ -255,12 +245,6 @@
   </style>
 </head>
 <body>
-
-  <!-- VIDEO BACKGROUND -->
-  <video id="bg-video" autoplay muted loop playsinline>
-    <source src="fundo.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo em segundo plano.
-  </video>
 
   <!-- NAVBAR FIXA -->
   <div class="navbar-top">
@@ -319,85 +303,84 @@
       </section>
 
       <section id="projetos">
-  <h2><i data-lucide="gamepad" class="icon"></i> Projetos Relevantes</h2>
-  
-  <!-- Projeto 1: Studio de Jogos Digitais  -->
-  <div style="background-color:#1a1a1a; border:2px solid #00ff88; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(0,255,136,0.5);">
-    <h3 style="color:#00ff88; margin-bottom:10px;">Studio de Jogos Digitais</h3>
-    <p>Desenvolvimento de jogos 2D, 3D, mobile e desktop, aplicando conceitos de programação e design.</p>
-    <a href="https://phel-lip.itch.io/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
-  </div>
+        <h2><i data-lucide="gamepad" class="icon"></i> Projetos Relevantes</h2>
 
-  <!-- Projeto 2: Portal IFBA -->
-  <div style="background-color:#1a1a1a; border:2px solid #00ff88; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(0,255,136,0.5); color:#fff;">
-    <h3 style="color:#00ff88; margin-bottom:15px;">Página Web [Mapa de Navegação - Portal IFBA]</h3>
+        <!-- Projeto 1: Studio de Jogos Digitais  -->
+        <div style="background-color:#1a1a1a; border:2px solid #06B6D4; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(6,182,212,0.25);">
+          <h3 style="color:#06B6D4; margin-bottom:10px;">Studio de Jogos Digitais</h3>
+          <p>Desenvolvimento de jogos 2D, 3D, mobile e desktop, aplicando conceitos de programação e design.</p>
+          <a href="https://phel-lip.itch.io/" target="_blank" style="display:inline-block; margin-top:10px; color:#0B1120; background:#06B6D4; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
+        </div>
 
-    <p><strong>Objetivo:</strong> Criar um hub que centraliza os sites mais acessados do Portal IFBA, facilitando a navegação para estudantes e servidores, novatos ou veteranos, com foco em usabilidade e acessibilidade.</p>
+        <!-- Projeto 2: Portal IFBA -->
+        <div style="background-color:#1a1a1a; border:2px solid #06B6D4; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(6,182,212,0.25); color:#fff;">
+          <h3 style="color:#06B6D4; margin-bottom:15px;">Página Web [Mapa de Navegação - Portal IFBA]</h3>
 
-    <p><strong>Tecnologias usadas:</strong> HTML, CSS e JavaScript.</p>
+          <p><strong>Objetivo:</strong> Criar um hub que centraliza os sites mais acessados do Portal IFBA, facilitando a navegação para estudantes e servidores, novatos ou veteranos, com foco em usabilidade e acessibilidade.</p>
 
-    <p><strong>Recursos implementados:</strong></p>
-    <p style="margin-left:15px; line-height:1.6;">
-      <strong>• Leitura Fácil:</strong> aumenta o tamanho de textos e botões para melhor legibilidade.<br>
-      <strong>• Alto Contraste:</strong> modo de contraste elevado para melhor visualização.<br>
-      <strong>• VLibras:</strong> integração com tradutor de Libras para acessibilidade a usuários surdos.
-    </p>
+          <p><strong>Tecnologias usadas:</strong> HTML, CSS e JavaScript.</p>
 
-    <p><strong>Resultado:</strong> Projeto aplicado na disciplina de Interação Humano-Computador, unindo conhecimentos de desenvolvimento web e boas práticas de acessibilidade.</p>
+          <p><strong>Recursos implementados:</strong></p>
+          <p style="margin-left:15px; line-height:1.6;">
+            <strong>• Leitura Fácil:</strong> aumenta o tamanho de textos e botões para melhor legibilidade.<br>
+            <strong>• Alto Contraste:</strong> modo de contraste elevado para melhor visualização.<br>
+            <strong>• VLibras:</strong> integração com tradutor de Libras para acessibilidade a usuários surdos.
+          </p>
 
-    <a href="https://phel-lip.github.io/Projeto-Portal/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
-  </div>
+          <p><strong>Resultado:</strong> Projeto aplicado na disciplina de Interação Humano-Computador, unindo conhecimentos de desenvolvimento web e boas práticas de acessibilidade.</p>
 
-  <!-- Projeto 3: Busca em Largura (IA)  -->
-  <div style="background-color:#1a1a1a; border:2px solid #00ff88; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(0,255,136,0.5);">
-    <h3 style="color:#00ff88; margin-bottom:10px;">BFS - Busca em Largura (IA)</h3>
-    <p>Implementação interativa do algoritmo de Busca em Largura (BFS), feita na Unity, aplicando conceitos de Inteligência Artificial para resolver problemas de caminho em grafos.</p>
-    <a href="https://phel-lip.github.io/Projeto-BFSIA/" target="_blank" style="display:inline-block; margin-top:10px; color:#000; background:#00ff88; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
-  </div>
+          <a href="https://phel-lip.github.io/Projeto-Portal/" target="_blank" style="display:inline-block; margin-top:10px; color:#0B1120; background:#06B6D4; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
+        </div>
 
-  <!-- Nota sobre novos projetos -->
-  <p style="margin-top:10px; font-style:italic; color:#00cc66;">
-    Novos projetos em desenvolvimento.
-  </p>
-</section>
+        <!-- Projeto 3: Busca em Largura (IA)  -->
+        <div style="background-color:#1a1a1a; border:2px solid #06B6D4; border-radius:12px; padding:20px; margin-bottom:20px; box-shadow:0 0 15px rgba(6,182,212,0.25);">
+          <h3 style="color:#06B6D4; margin-bottom:10px;">BFS - Busca em Largura (IA)</h3>
+          <p>Implementação interativa do algoritmo de Busca em Largura (BFS), feita na Unity, aplicando conceitos de Inteligência Artificial para resolver problemas de caminho em grafos.</p>
+          <a href="https://phel-lip.github.io/Projeto-BFSIA/" target="_blank" style="display:inline-block; margin-top:10px; color:#0B1120; background:#06B6D4; padding:8px 12px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">Ver Projeto</a>
+        </div>
+
+        <!-- Nota sobre novos projetos -->
+        <p style="margin-top:10px; font-style:italic; color:#67E8F9;">
+          Novos projetos em desenvolvimento.
+        </p>
+      </section>
 
       <section id="habilidades-diferenciais">
-      <h2><i data-lucide="sparkles" class="icon"></i> Diferenciais</h2>
+        <h2><i data-lucide="sparkles" class="icon"></i> Diferenciais</h2>
 
-      <h3 class="skill-subtitle"><i data-lucide="palette" class="icon"></i> Design & Produção Visual</h3>
-      <div class="skill-group">
-        <span class="tag">Desenho à mão</span>
-        <span class="tag">Vetor</span>
-        <span class="tag">Identidade Visual</span>
-        <span class="tag">Canvas</span>
-        <span class="tag">Blender (Animação & Modelagem 3D)</span>
-        <span class="tag">Edição de imagem</span>
-        <span class="tag">Edição de vídeo</span>
-      </div>
+        <h3 class="skill-subtitle"><i data-lucide="palette" class="icon"></i> Design & Produção Visual</h3>
+        <div class="skill-group">
+          <span class="tag">Desenho à mão</span>
+          <span class="tag">Vetor</span>
+          <span class="tag">Identidade Visual</span>
+          <span class="tag">Canvas</span>
+          <span class="tag">Blender (Animação & Modelagem 3D)</span>
+          <span class="tag">Edição de imagem</span>
+          <span class="tag">Edição de vídeo</span>
+        </div>
 
-      <h3 class="skill-subtitle"><i data-lucide="edit" class="icon"></i> Criatividade & Conteúdo</h3>
-      <div class="skill-group">
-        <span class="tag">Adobe Illustrator</span>
-        <span class="tag">Adobe Photoshop</span>
-        <span class="tag">Escrita criativa</span>
-      </div>
+        <h3 class="skill-subtitle"><i data-lucide="edit" class="icon"></i> Criatividade & Conteúdo</h3>
+        <div class="skill-group">
+          <span class="tag">Adobe Illustrator</span>
+          <span class="tag">Adobe Photoshop</span>
+          <span class="tag">Escrita criativa</span>
+        </div>
 
-      <h3 class="skill-subtitle"><i data-lucide="accessibility" class="icon"></i> Foco Profissional</h3>
-      <div class="skill-group">
-        <span class="tag">Experiência inicial e aprofundamento em acessibilidade digital aplicada a jogos e web (inclusive TEA e design inclusivo)</span>
-      </div>
-    </section>
+        <h3 class="skill-subtitle"><i data-lucide="accessibility" class="icon"></i> Foco Profissional</h3>
+        <div class="skill-group">
+          <span class="tag">Experiência inicial e aprofundamento em acessibilidade digital aplicada a jogos e web (inclusive TEA e design inclusivo)</span>
+        </div>
+      </section>
 
-     <section id="sobre">
-  <h2><i data-lucide="user" class="icon"></i> Resumo Profissional</h2>
-  <p>
-    Sou estudante do 5º e último período de Tecnologia em Jogos Digitais no Instituto Federal da Bahia, com experiência prática em desenvolvimento de jogos 2D, 3D, mobile e web.<br>
-    Tenho domínio em C# e Unity, e habilidades em desenvolvimento fullstack, incluindo front-end e back-end.<br>
-    Atualmente, aprofundo meus conhecimentos em Unreal Engine e novas tecnologias digitais.<br>
-    Busco aplicar criatividade e lógica para transformar ideias em soluções funcionais e experiências interativas de qualidade.
-  </p>
-</section>
-
+      <section id="sobre">
+        <h2><i data-lucide="user" class="icon"></i> Resumo Profissional</h2>
+        <p>
+          Sou estudante do 5º e último período de Tecnologia em Jogos Digitais no Instituto Federal da Bahia, com experiência prática em desenvolvimento de jogos 2D, 3D, mobile e web.<br>
+          Tenho domínio em C# e Unity, e habilidades em desenvolvimento fullstack, incluindo front-end e back-end.<br>
+          Atualmente, aprofundo meus conhecimentos em Unreal Engine e novas tecnologias digitais.<br>
+          Busco aplicar criatividade e lógica para transformar ideias em soluções funcionais e experiências interativas de qualidade.
+        </p>
+      </section>
 
       <section id="contato">
         <h2><i data-lucide="mail" class="icon"></i> Contato</h2>
@@ -410,14 +393,14 @@
     <footer>
       <p>&copy; 2025 Thasso Felipe. Todos os direitos reservados.</p>
       <a href="curriculo.pdf" target="_blank" 
-        style="display:inline-block; margin-top:15px; color:#000; background:#00ff88; padding:10px 18px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">
-        <i data-lucide="file-down" class="icon" style="color:#000;"></i> Baixar Currículo
+        style="display:inline-block; margin-top:15px; color:#0B1120; background:#06B6D4; padding:10px 18px; border-radius:8px; font-weight:bold; text-decoration:none; transition:background 0.3s;">
+        <i data-lucide="file-down" class="icon" style="color:#0B1120;"></i> Baixar Currículo
       </a>
     </footer>
   </div>
 
   <script>
-    lucide.createIcons({ color: "#00ff88" });
+    lucide.createIcons({ color: "#06B6D4" });
   </script>
 </body>
 </html>
