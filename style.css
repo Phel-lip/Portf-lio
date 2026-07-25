@@ -456,6 +456,17 @@ h2::before {
   color: #67e8f9;
 }
 
+.featured-project {
+  color: #8ff3ff;
+  text-shadow:
+    0 0 6px rgba(103,232,249,.8),
+    0 0 12px rgba(103,232,249,.35);
+}
+
+.featured-project::before {
+  content: "★ ";
+}
+
 .project-card h3 {
   font-size: 2.1vh;
   margin-bottom: 0.3vh;
